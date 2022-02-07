@@ -7,12 +7,12 @@
       },
       {
         "email": "email2@g.com",
-        "password": "shree123",
+        "password": "shree1234",
         "id": 2
       },
       {
         "email": "email3@g.com",
-        "password": "shree123",
+        "password": "shree12345",
         "id": 3
       }
     ]
