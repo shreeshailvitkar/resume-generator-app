@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../SCSS/styles.css">
+  <script src="../JS/script.js"></script>
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Canvas</a>
+
+    <!-- Toggler/collapsibe Button 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sampleTemplate.html">Template</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Login.html">Create Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">How To Create Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section>
+    <img class="img-fluid" id="backgroundImage" src="../Assets/Images/Landing_page.jpg" alt="">
+  </section>
+
+  <button id="modalButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+    data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome to PlanetM</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="./Login.html" type="button" class="btn btn-success">Login</a>
+          <a href="./Register.html" type="button" class="btn btn-info">Sign-Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col">
+          <h1 id="about" class="text-center fs-2">How To Make A Resume</h1>
+          <blockquote class="blockquote-reverse">
+            <p> <strong>1.Open Canvas</strong> <br>
+              Open up Canva and search for "Resume" to start designing your own.</p>
+            <p> <strong>2.Find The Right Template</strong> <br>
+              Choose from designed resume templates.
+              Take your pick from styles like modern or simple layouts.</p>
+            <p> <strong>3.Personalize your resume</strong> <br>
+              After picking a template, Edit your Profile in a few clicks.
+              Upload your own photo and you can edit the profile as much as you want.</p>
+            <p> <strong>4.Download your Resume</strong> <br>
+              Download high-quality prints of your resumes through Canvas.
+              Or, save your design as a PDF file.</p>
+
+        </div>
+        <div class="col">
+          <img id="img" src="../Assets/Images/resume111.jpg" alt="" class="center">
+        </div>
+      </div>
+    </div><br><br>
+    <div class="jumbotron text-center">
+      <h1>Online Resume
+        Generator App</h1>
+      <p> @2022 All Rights Reserved, Canvas</p>
+
+    </div>
+</body>
+
+</html>
