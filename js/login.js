@@ -9,9 +9,9 @@ function login()
     fetch('http://localhost:3000/login')
             .then(resp => resp.text())
             .then(data => {
-                    alert(data)
+                    //alert(data)
                     const jsonData = JSON.parse(data);
-                    alert(jsonData[1].email);
+                    //alert(jsonData[1].email);
 
                     for(var i = 0; i<jsonData.length; i++)
                     {
@@ -33,7 +33,8 @@ function login()
                     if(loginValid==1)
                     {
                         alert("success")
-                        window.location.replace("http://www.w3schools.com");
+                        document.cookie = "username="+emailFormInput;
+                        window.location = "http://127.0.0.1:5500/html/resumeForm.html";
                         
 
                     }
